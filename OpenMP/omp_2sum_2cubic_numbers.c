@@ -1,3 +1,27 @@
+/*
+  Purpose:
+
+    Aplicate parallel proccess to an algorithm with OpenMP
+
+  Example:
+
+    May 07 2020 11:58:55
+
+  Licensing:
+
+    This code is distributed under the GNU LGPL license.
+
+  Modified:
+
+    28 Nov 2020
+
+  Author:
+  
+  OpenMP Modification:
+  28 Nov 2020 by Julian Tolosa, Universidad Industrial de Santander 8.8tolosajulian@gmail.com                   
+  This OpenMP Modification makes a parallelization of the original Code...  
+*/
+
 # include <stdio.h>
 # include <stdlib.h>
 # include <math.h>
@@ -48,6 +72,6 @@ void main ()
     omp_set_num_threads(8);     // Set number of threads
     #pragma omp parallel for    // Combine parallel and for pragma in one line
     for (int i = 1; i <= n; i++){
-        loop_operation(i,n);
+        loop_operation(i,n); // Function instead of directly the code
     }
 }
