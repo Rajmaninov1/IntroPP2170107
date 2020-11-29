@@ -1,1 +1,3 @@
 # OpenMP
+
+Este programa paraleliza el proceso de listar los números que pueden ser expresados de dos maneras diferentes como la suma de dos cubos. La diferencia más importante entre este y el código original es que se divide el for superior en 8 hilos. El proceso de decisión para saber si un número del intervalo cumple las condiciones (que se encuentra dentro del for que se paralelizó) no está paralelizado.
